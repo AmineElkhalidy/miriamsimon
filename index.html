@@ -79,77 +79,75 @@
           />
         </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul
-            class="h-full w-full flex flex-col justify-center items-center gap-6 uppercase py-6 lg:py-0 lg:flex-row lg:gap-10"
-          >
-            <li>
-              <a class="" href="#home">home</a>
-            </li>
+        <div class="nav__menu sm:w-[50%]" id="nav-menu">
+          <div class="h-screen w-full py-6 flex items-center justify-center">
+            <ul
+              class="uppercase flex items-center justify-center gap-4 lg:gap-10 lg:pr-8"
+            >
+              <li class="">
+                <a class="" href="#">Home</a>
+              </li>
 
-            <li>
-              <a href="#aboutme">about me</a>
-            </li>
+              <li class="">
+                <a class="" href="#aboutme">AboutMe</a>
+              </li>
 
-            <li>
-              <a class="flex items-center justify-center" href="#services"
-                >services
-              </a>
+              <li class="">
+                <a class="" href="#services">Services</a>
+                <ul
+                  class="flex flex-col gap-3 mt-3 font-light text-sm lg:hidden"
+                >
+                  <li class="button duration-300 px-4 py-3 cursor-pointer">
+                    <a href="#BusinessAdvisoryService"
+                      >Business Advisory Service</a
+                    >
+                  </li>
 
-              <ul
-                class="flex flex-col items-center gap-4 justify-center lg:hidden"
-              >
-                <li>
-                  <a href="#BusinessAdvisoryService"
-                    >Business Advisory Service</a
-                  >
-                </li>
-                <li>
-                  <a href="#TheRetailPowerHouse">The Retail PowerHouse</a>
-                </li>
-                <li>
-                  <a href="#WorkshopsWebinarsSpeaking"
-                    >Workshops, webinars, speaking</a
-                  >
-                </li>
-              </ul>
-            </li>
+                  <li class="button duration-300 px-4 py-3 cursor-pointer">
+                    <a href="#TheRetailPowerhouse">The Retail Powerhouse</a>
+                  </li>
 
-            <li>
-              <a
-                class="flex mb-4 items-center justify-center lg:mb-0"
-                href="#customers"
-                >customers</a
-              >
-              <ul
-                class="flex flex-col items-center gap-4 justify-center lg:hidden"
-              >
-                <li>
-                  <a href="#clients">clients</a>
-                </li>
-                <li>
-                  <a href="#testimonials">testimonials</a>
-                </li>
-              </ul>
-            </li>
+                  <li class="button duration-300 px-4 py-3 cursor-pointer">
+                    <a href="#WorkshopsWebinarsSpeaking"
+                      >Workshops, Webinars, Speaking</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-            <li>
-              <a href="#shop">shop</a>
-            </li>
+              <li class="">
+                <a class="" href="#clients">Customers</a>
+                <ul
+                  class="flex flex-col gap-2 mt-3 font-light text-sm lg:hidden"
+                >
+                  <li class="button duration-300 cursor-pointer py-3">
+                    <a href="#clients">clients</a>
+                  </li>
 
-            <li>
-              <a href="#news">news</a>
-            </li>
+                  <li class="button duration-300 cursor-pointer py-3">
+                    <a href="#testimonials">testimonials</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li>
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
+              <li class="">
+                <a class="" href="#shop">Shop</a>
+              </li>
 
-          <div class="absolute top-4 right-4 lg:hidden" id="nav-close">
-            <i
-              class="ri-close-line text-[2.4rem] text-white cursor-pointer hover:text-main duration-300"
-            ></i>
+              <li class="">
+                <a class="" href="#news">news</a>
+              </li>
+
+              <li class="">
+                <a class="" href="#contact">contact</a>
+              </li>
+            </ul>
+
+            <div class="absolute top-4 right-4 lg:hidden" id="nav-close">
+              <i
+                class="ri-close-line text-[2.4rem] text-white cursor-pointer hover:text-main duration-300"
+              ></i>
+            </div>
           </div>
         </div>
 
@@ -218,8 +216,8 @@
       </section>
 
       <!-- Growth -->
-      <section class="h-full w-full">
-        <div class="max-w-5xl mx-auto py-20">
+      <section class="h-full w-full" id="services">
+        <div class="max-w-5xl mx-auto py-24">
           <div class="text-center px-4 xl:px-0 mb-12">
             <h2
               class="text-2xl font-bold font-second md:text-3xl lg:text-4xl -mb-1"
@@ -332,8 +330,8 @@
       </section>
 
       <!-- Clients & Experience -->
-      <section class="h-full w-full bg-[#151616]">
-        <div class="max-w-5xl mx-auto py-20">
+      <section class="h-full w-full bg-[#151616]" id="clients">
+        <div class="max-w-5xl mx-auto py-24">
           <div class="text-center px-4 xl:px-0 mb-12">
             <h2
               class="text-2xl font-bold font-second md:text-3xl lg:text-4xl -mb-1"
@@ -356,8 +354,8 @@
       </section>
 
       <!-- Testimonials -->
-      <section class="h-full w-full">
-        <div class="max-w-5xl mx-auto py-20">
+      <section class="h-full w-full" id="testimonials">
+        <div class="max-w-5xl mx-auto py-24">
           <div class="text-center px-4 xl:px-0 mb-12">
             <h2 class="text-2xl font-bold font-second md:text-3xl lg:text-4xl">
               Client Testimonials
