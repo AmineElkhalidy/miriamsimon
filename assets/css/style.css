@@ -22,16 +22,37 @@ body {
   );
 }
 
-.nav__menu {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  z-index: 100;
-  background-color: #0f0e0e;
-  width: 100%;
-  min-height: 100vh;
-}
-
 .show-menu {
   right: 0;
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+  color: #e8546d;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  background-color: #e8546d;
+  width: 100%;
+  height: 2px;
+  bottom: -0.75rem;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #0f0e0e;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
 }
