@@ -80,7 +80,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .nav__menu {
-    min-height: 100vh;
+    max-height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -88,6 +88,7 @@ body {
     z-index: 100;
     background-color: #0f0e0e;
     transition: 0.3s;
+    overflow-y: auto;
   }
 }
 
