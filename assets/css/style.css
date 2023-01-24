@@ -22,6 +22,15 @@ body {
   );
 }
 
+.gradient-box {
+  background: linear-gradient(
+    90deg,
+    rgb(232, 84, 109) 0%,
+    rgb(164, 101, 206) 100%
+  );
+  border-style: none;
+}
+
 /* Active link */
 .active-link {
   position: relative;
