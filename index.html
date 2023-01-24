@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------ FAVICON ------ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+
+    <!-- ------ CSS FILE ------ -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- ------ INTER & RALEWAY ------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------ Remix icons ------ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ------ TailwindCSS CDN ------ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ------ Tailwind Configuration ------ -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#e8546d",
+              textColor: "#ebeaea",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              second: ["Raleway", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Retail Strategist Miriam Simon</title>
+  </head>
+  <body class="font-sans">
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 z-50 shadow-md w-full bg-[#0F0E0E]">
+      <nav
+        class="max-w-5xl mx-auto flex items-center justify-between px-3 h-20"
+      >
+        <a href="#">
+          <img
+            src="https://cdn1.site-media.eu/images/0/5839864/MiriamSimon_BlackBG.svg"
+            alt="Miriam Simon header logo"
+            class="w-60"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul
+            class="h-full w-full flex flex-col justify-center items-center gap-6 uppercase py-6"
+          >
+            <li>
+              <a class="" href="#home">home</a>
+            </li>
+
+            <li>
+              <a href="#aboutme">about me</a>
+            </li>
+
+            <li>
+              <a class="flex items-center justify-center" href="#services"
+                >services
+              </a>
+
+              <ul class="flex flex-col items-center gap-4 justify-center">
+                <li>
+                  <a href="#BusinessAdvisoryService"
+                    >Business Advisory Service</a
+                  >
+                </li>
+                <li>
+                  <a href="#TheRetailPowerHouse">The Retail PowerHouse</a>
+                </li>
+                <li>
+                  <a href="#WorkshopsWebinarsSpeaking"
+                    >Workshops, webinars, speaking</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="flex mb-4 items-center justify-center" href="#customers"
+                >customers</a
+              >
+              <ul class="flex flex-col items-center gap-4 justify-center">
+                <li>
+                  <a href="#clients">clients</a>
+                </li>
+                <li>
+                  <a href="#testimonials">testimonials</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#shop">shop</a>
+            </li>
+
+            <li>
+              <a href="#news">news</a>
+            </li>
+
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+
+          <div class="absolute top-4 right-4" id="nav-close">
+            <i
+              class="ri-close-line text-[2.4rem] text-white cursor-pointer hover:text-main duration-300"
+            ></i>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="tel:+353 86 856 9485">
+            <svg
+              class="fill-white h-7 cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="170 -787 659 875"
+              data-icon="ico-phone"
+              preserveAspectRatio="xMidYMid"
+            >
+              <path
+                d="M390.7 -496.7C270.4 -427.2 453.9 -83.1 585.6 -159.1L707.7 52.3C652.1 84.4 605.2 104.6 540.8 67.8 362 -34.4 165.2 -375.1 170.8 -578.3c1.9 -70.6 43.6 -98.3 97.9 -129.7 23.3 40.4 98.6 170.8 122 211.3zm50.4 -5.7c-13 7.5 -29.7 3.1 -37.3 -10l-115 -199.3c-7.5 -13 -3.1 -29.7 10 -37.3l60.5 -34.9c13 -7.5 29.7 -3.1 37.3 10L511.7 -574.6c7.5 13 3.1 29.7 -10 37.2l-60.6 35zM755.5 42.1c-13 7.5 -29.7 3.1 -37.3 -10l-115 -199.3c-7.5 -13 -3.1 -29.7 10 -37.3l60.5 -34.9c13 -7.5 29.7 -3.1 37.3 10L826.1 -30.1c7.5 13 3.1 29.7 -10 37.3l-60.6 34.9z"
+              ></path>
+            </svg>
+          </a>
+
+          <div class="inline" id="nav-toggle">
+            <i class="ri-menu-line text-[2.3rem] cursor-pointer"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Intro section -->
+      <section
+        class="h-screen bg-cover w-full bg-[url('./assets/images/presentation-bg.png')]"
+      >
+        <div class="w-full max-w-5xl mx-auto pt-40 grid">
+          <div class="px-4">
+            <h2 class="text-2xl font-semibold mb-2 md:text-3xl font-second">
+              A Successful<br />
+              <span class="gradient-text">Business Strategist</span><br />
+              With One Foot<br />
+              In The <span class="text-main">Future</span>
+            </h2>
+
+            <p class="font-light mb-8">
+              If you'd like to grow your business - get in touch for a highly
+              commercial & future proofing growth strategy
+            </p>
+
+            <q class="text-sm italic text-textColor"
+              >The balance between deep thinking on strategy and a pragmatic
+              approach is something you rarely see. I highly recommend you talk
+              to Miriam if you are focused on results.’’ - Alan Gormley,
+              ShopBox</q
+            >
+
+            <div class="mt-5">
+              <a
+                class="p-3 bg-main rounded-md font-semibold duration-300 hover:bg-white hover:text-main"
+                href="#services"
+                >Services</a
+              >
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="">
+            <img src="" alt="" srcset="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Growth -->
+      <section class="h-full w-full">
+        <div class="max-w-5xl mx-auto py-20">
+          <div class="text-center px-4 xl:px-0 mb-12">
+            <h2
+              class="text-2xl font-bold font-second md:text-3xl lg:text-4xl -mb-1"
+            >
+              Growth Strategies and Support Services
+            </h2>
+
+            <div class="text-center mb-1">
+              <span class="inline-block w-20 h-[2px] bg-main"></span>
+            </div>
+
+            <p class="font-light max-w-md mx-auto">
+              Choose from a range of services aimed at businesses that want to
+              succeed in an increasingly competitive, unpredictable marketplace.
+            </p>
+          </div>
+
+          <!-- Cards -->
+          <div class="px-4 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <div class="gradient-card p-4">
+              <img class="mb-4" src="./assets/images/chart.png" alt="stats" />
+
+              <h3 class="text-lg font-light -mb-2">
+                Business Advisory Service
+              </h3>
+              <div>
+                <span class="w-12 h-[2px] bg-white inline-block"></span>
+              </div>
+
+              <p class="font-light mb-20">
+                Get the support and advice you need to deliver long-term growth.
+                From tactical trading strategy, to future proofing your
+                business. Both commercially and operationally, I can help you
+                get great results.
+              </p>
+
+              <div class="mb-4">
+                <a
+                  class="py-3 px-4 border border-white font-medium rounded-md hover:bg-main duration-300"
+                  href="#"
+                  >Find out more</a
+                >
+              </div>
+            </div>
+
+            <div class="p-4 bg-[#191919]">
+              <img class="mb-4" src="./assets/images/home.png" alt="house" />
+
+              <h3 class="text-lg font-light -mb-2">The Retail PowerHouse</h3>
+              <div>
+                <span class="w-12 h-[2px] bg-main inline-block"></span>
+              </div>
+
+              <p class="font-light mb-20">
+                Grow your SME business by signing up for my subscription-based
+                skills and insight programme. The Retail PowerHouse makes
+                high-grade trading advice and market updates easily accessible
+                and low cost for retail-focused businesses across all
+                categories.
+              </p>
+
+              <div class="mb-4">
+                <a
+                  class="py-3 px-4 border border-white font-medium rounded-md hover:bg-main duration-300"
+                  href="#"
+                  >Find out more</a
+                >
+              </div>
+            </div>
+
+            <div class="p-4 bg-[#191919]">
+              <img
+                class="mb-4"
+                src="./assets/images/group.png"
+                alt="group of people"
+              />
+
+              <h3 class="text-lg font-light -mb-2">
+                Workshops, Webinars, Speaking
+              </h3>
+              <div>
+                <span class="w-12 h-[2px] bg-main inline-block"></span>
+              </div>
+
+              <p class="font-light mb-20">
+                Get a commercial advantage, as well as powerful yet practical
+                actions that you can implement straight away. My webinars,
+                workshops and Q&A sessions have transformed the fortunes of
+                retail businesses across the UK & Ireland.
+              </p>
+
+              <div class="mb-4">
+                <a
+                  class="py-3 px-4 border border-white font-medium rounded-md hover:bg-main duration-300"
+                  href="#"
+                  >Find out more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients & Experience -->
+      <section class="h-full w-full bg-[#151616]">
+        <div class="max-w-5xl mx-auto py-20">
+          <div class="text-center px-4 xl:px-0 mb-12">
+            <h2
+              class="text-2xl font-bold font-second md:text-3xl lg:text-4xl -mb-1"
+            >
+              Clients & Experience
+            </h2>
+
+            <div class="text-center mb-1">
+              <span class="inline-block w-20 h-[2px] bg-main"></span>
+            </div>
+
+            <p class="font-light max-w-md mx-auto">
+              We have worked with and for a wide variety of clients, including
+              some Fortune 500 companies.
+            </p>
+          </div>
+
+          <img src="./assets/images/alllogos.svg" alt="Logos" />
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="h-full w-full">
+        <div class="max-w-5xl mx-auto py-20">
+          <div class="text-center px-4 xl:px-0 mb-12">
+            <h2 class="text-2xl font-bold font-second md:text-3xl lg:text-4xl">
+              Client Testimonials
+            </h2>
+
+            <div class="text-center mb-1">
+              <span class="inline-block w-20 h-[2px] bg-main"></span>
+            </div>
+
+            <p class="font-light max-w-md mx-auto">
+              Don’t take our word for it. Take a look at what some of our
+              current and previous clients are saying about us.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Instagram Feed -->
+      <section class="h-full w-full bg-[#151616]">
+        <div class="max-w-5xl mx-auto py-20">
+          <div class="text-center px-4 xl:px-0 mb-12">
+            <h2 class="text-2xl font-bold font-second md:text-3xl lg:text-4xl">
+              Instagram Feed
+            </h2>
+
+            <div class="text-center mb-1">
+              <span class="inline-block w-20 h-[2px] bg-main"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form -->
+      <section class="h-full w-full">
+        <div class="p-4 pb-16">
+          <div class="max-w-4xl mx-auto bg-black p-10">
+            <div class="text-center">
+              <h3 class="text-3xl font-extrabold leading-10 mb-3">
+                Sign Up now to Stay Ahead of the Retail Curve
+              </h3>
+              <p class="text-xl">
+                Want to Be among the first to hear about news, insights and
+                developments from the world of retail? If you sign up to our
+                mailing list, you’ll receive regular newsletters — packed with
+                useful advice and information. You’ll also learn about Miriam’s
+                upcoming webinars, speaking events and educational programmes
+                before they’re officially launched. Complete the form below —
+                and take the first step towards a brighter, more prosperous
+                future within the retail industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black">
+      <div class="h-full w-full py-16">
+        <div
+          class="px-3 space-y-12 max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 sm:space-y-0 xl:px-0"
+        >
+          <div>
+            <img
+              src="https://cdn1.site-media.eu/images/0/5839864/MiriamSimon_BlackBG.svg"
+              alt="Miriam Simon footer logo"
+              class="w-56"
+            />
+
+            <div>
+              <p class="font-light text-lg">
+                A Successful Retail<br />
+                Strategist with One Foot in<br />
+                the Future.
+              </p>
+
+              <div class="flex mt-5 gap-4">
+                <a href="https://www.linkedin.com/in/miriamasimon">
+                  <i
+                    class="ri-linkedin-fill text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+
+                <a href="https://www.instagram.com/miriam_pto.ie/">
+                  <i
+                    class="ri-instagram-line text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+
+                <a href="https://www.facebook.com/PTO.ie/">
+                  <i
+                    class="ri-facebook-fill text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+
+                <a href="https://twitter.com/mirms09">
+                  <i
+                    class="ri-twitter-fill text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3 md:text-2xl lg:text-3xl">
+              Services
+            </h3>
+            <ul class="font-light space-y-1 text-lg">
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#aboutme"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#services"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#customers"
+                  >Customers</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#shop"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#news"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3 md:text-2xl lg:text-3xl">
+              Contact
+            </h3>
+            <p class="font-light text-lg">Miriam Simon</p>
+
+            <div class="flex flex-col">
+              <a
+                class="inline-flex items-center gap-2 cursor-pointer"
+                href="tel:+353 (0)86 856 9485"
+                ><i class="ri-phone-fill text-[1.25rem] text-main"></i> +353
+                (0)86 856 9485
+              </a>
+
+              <a
+                class="inline-flex items-center gap-2 cursor-pointer"
+                href="mailto:miriam@miriamsimon.ie"
+              >
+                <i class="ri-mail-fill text-[1.25rem] text-main"></i>
+                <span class="hover:underline">miriam@miriamsimon.ie</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------ Line & Copyright ------ -->
+        <div>
+          <div
+            class="w-full border-bottom my-2 bg-gray-600 h-px max-w-5xl mx-auto"
+          />
+
+          <p class="pt-4 text-center font-light text-xs">
+            Copyright © 2022 All Rights Reserved | miriamsimon.ie
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ------ Main JS ------ -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
