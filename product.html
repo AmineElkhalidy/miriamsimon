@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- ------ FAVICON ------ -->
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="icon" />
     <link
@@ -62,7 +63,7 @@
       };
     </script>
 
-    <title>Shop Miriam Simon - Miriam Simon</title>
+    <title>Product Title Goes Here</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -136,11 +137,11 @@
               </li>
 
               <li class="active-link px-3">
-                <a class="" href="#shop">Shop</a>
+                <a class="" href="./shop.html">Shop</a>
               </li>
 
               <li class="active-link px-3">
-                <a class="" href="#news">news</a>
+                <a class="" href="./news.html">news</a>
               </li>
 
               <li class="active-link px-3">
@@ -180,81 +181,104 @@
 
     <main>
       <section class="h-full w-full">
-        <div class="py-36">
-          <div class="max-w-4xl mx-auto">
-            <div class="grid place-items-center">
-              <div class="grid gap-12 sm:grid-cols-2 sm:gap-0">
-                <div class="grid gap-4">
-                  <div>
-                    <a
-                      href="./product.html"
-                      class="cursor-pointer grid place-items-center"
-                    >
-                      <img
-                        class="w-[60%] sm:w-[70%] hover:scale-110 duration-300"
-                        src="./assets/images/ebook.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
+        <div class="py-28 max-w-5xl mx-auto grid place-items-center">
+          <!-- Content container -->
+          <div
+            class="grid place-items-center sm:place-items-start sm:grid-cols-2 sm:gap-12"
+          >
+            <img src="./assets/images/ebook.png" alt="product preview" />
 
-                  <div class="text-center">
-                    <h3 class="">
-                      <a href="#">Retailing through Uncertainty</a>
-                    </h3>
-
-                    <span class="text-sm">eBook</span>
-
-                    <h4 class="font-semibold text-[22px]">€20.00</h4>
-                  </div>
-                </div>
-
-                <div class="grid gap-4">
-                  <div>
-                    <a class="cursor-pointer grid place-items-center">
-                      <img
-                        class="w-[60%] sm:w-[70%] hover:scale-110 duration-300"
-                        src="./assets/images/RPH.png"
-                        alt=""
-                      />
-                    </a>
-                  </div>
-
-                  <div class="text-center">
-                    <h3 class="">
-                      <a href="#">The Retail PowerHouse</a>
-                    </h3>
-
-                    <span class="text-sm">Membership Forum</span>
-
-                    <h4 class="font-semibold text-[22px]">47.00 per month</h4>
-                  </div>
-                </div>
+            <div class="px-4 sm:px-0 max-w-sm">
+              <h3
+                class="text-center font-second text-lg font-semibold mb-1 sm:text-left sm:text-xl"
+              >
+                Retailing through Uncertainty
+              </h3>
+              <h4 class="text-center text-lg sm:text-left sm:text-xl my-4">
+                €20.00
+              </h4>
+              <div class="text-center sm:text-left mb-6">
+                <span>eBook</span>
               </div>
 
-              <div class="flex gap-16 mt-28 flex-wrap px-4 sm:px-0">
+              <div class="w-full h-full mb-4">
                 <a
-                  class="inline-flex items-center flex-col text-sm gap-1"
-                  href="#"
-                  ><i
-                    class="ri-account-circle-line text-[1.5rem] font-light"
-                  ></i>
-                  My account</a
+                  href=""
+                  class="w-full inline-block py-3 bg-[#333] duration-300 hover:bg-[#595959] font-semibold text-center"
+                  >Add To Bag</a
+                >
+              </div>
+
+              <h4 class="font-semibold text-center mb-2 sm:text-left">
+                Product Details
+              </h4>
+              <div class="space-y-3 font-light">
+                <p>
+                  This insightful book is packed with practical advice, tips and
+                  insights for anyone determined to succeed within the
+                  increasingly challenging retail environment.
+                </p>
+
+                <p>
+                  Miriam Simon generously shares a wealth of knowledge and
+                  experience — gained from a lifetime working with every
+                  imaginable type of retail business.
+                </p>
+              </div>
+
+              <h4 class="font-semibold text-center my-2 uppercase sm:text-left">
+                Testimonials
+              </h4>
+              <div class="space-y-3 font-light">
+                <p>"This is a MUST READ for anyone in Retail!"</p>
+                <span class="italic">Alan MacNamee, Garlanna Cards</span>
+
+                <p>
+                  "Miriam Simon is THE Retail Growth Expert in my opinion. I’ve
+                  also seen first-hand the impact she has had on businesses of
+                  all sizes. This book has hugely valuable insights for any
+                  retailer looking to thrive in a volatile, uncertain world."
+                </p>
+                <span class="italic">Alan MacNamee, Garlanna Cards</span>
+              </div>
+
+              <h4 class="font-semibold my-2">
+                Share this product with your friends
+              </h4>
+              <div class="flex gap-2">
+                <a
+                  class="flex items-center gap-1 p-1 bg-[#333] rounded-md cursor-pointer duration-300 hover:bg-gray-400"
+                  ><i class="ri-facebook-box-fill text-[1.25rem]"></i>
+                  <span>Share</span></a
                 >
                 <a
-                  class="inline-flex items-center flex-col text-sm gap-1"
-                  href="#"
-                  ><i class="ri-file-2-line text-[1.5rem] font-light"></i> Track
-                  Orders</a
+                  class="flex items-center gap-1 p-1 bg-[#333] rounded-md cursor-pointer duration-300 hover:bg-gray-400"
+                  ><i class="ri-twitter-fill text-[1.25rem]"></i>
+                  <span>Tweet</span></a
                 >
                 <a
-                  class="inline-flex items-center flex-col text-sm gap-1"
-                  href="#"
-                  ><i class="ri-shopping-bag-line text-[1.5rem] font-light"></i>
-                  Shopping Bag</a
+                  class="flex items-center gap-1 p-1 bg-[#333] rounded-md cursor-pointer duration-300 hover:bg-gray-400"
+                  ><i class="ri-pinterest-fill text-[1.25rem]"></i>
+                  <span>Pint it</span></a
                 >
               </div>
             </div>
+          </div>
+
+          <!-- Options -->
+          <div class="flex gap-16 mt-28 flex-wrap px-4 sm:px-0">
+            <a class="inline-flex items-center flex-col text-sm gap-1" href="#"
+              ><i class="ri-account-circle-line text-[1.5rem] font-light"></i>
+              My account</a
+            >
+            <a class="inline-flex items-center flex-col text-sm gap-1" href="#"
+              ><i class="ri-file-2-line text-[1.5rem] font-light"></i> Track
+              Orders</a
+            >
+            <a class="inline-flex items-center flex-col text-sm gap-1" href="#"
+              ><i class="ri-shopping-bag-line text-[1.5rem] font-light"></i>
+              Shopping Bag</a
+            >
           </div>
         </div>
       </section>
