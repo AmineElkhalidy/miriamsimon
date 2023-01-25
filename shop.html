@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- ------ FAVICON ------ -->
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="icon" />
     <link
@@ -36,6 +35,12 @@
       rel="stylesheet"
     />
 
+    <!-- ------ Remix icons ------ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <!-- ------ TailwindCSS CDN ------ -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -57,7 +62,7 @@
       };
     </script>
 
-    <title>Contact Miriam Simon - Miriam Simon</title>
+    <title>Shop Miriam Simon - Miriam Simon</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -76,48 +81,46 @@
         <div class="nav__menu sm:w-[50%]" id="nav-menu">
           <div class="py-16 h-full flex items-center justify-center">
             <ul
-              class="uppercase flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-10 lg:pr-8"
+              class="uppercase flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-3 lg:pr-8"
             >
-              <li class="">
-                <a class="" href="#">Home</a>
+              <li class="active-link px-3">
+                <a class="" href="./index.html">Home</a>
               </li>
 
-              <li class="">
+              <li class="active-link px-3">
                 <a class="" href="./about.html">About</a>
               </li>
 
-              <li class="text-center">
-                <a class="" href="#services">Services</a>
+              <li class="text-center group relative">
+                <a class="active-link px-3" href="#services">Services</a>
                 <ul
-                  class="text-center space-y-3 mt-3 font-light text-sm lg:hidden"
+                  class="text-center lg:text-left lg:w-[180px] lg:bg-black space-y-3 mt-3 font-light text-sm lg:hidden lg:hover:absolute lg:top-6 lg:left-0"
                 >
                   <li
-                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                    class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#BusinessAdvisoryService"
-                      >Business Advisory Service</a
-                    >
+                    <a href="#BAS">Business Advisory Service</a>
                   </li>
 
                   <li
-                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                    class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#TheRetailPowerhouse">The Retail Powerhouse</a>
+                    <a href="#RPH">The Retail Powerhouse</a>
                   </li>
 
                   <li
-                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                    class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#WorkshopsWebinarsSpeaking"
-                      >Workshops, Webinars, Speaking</a
-                    >
+                    <a href="#WWS">Workshops, Webinars, Speaking</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="text-center">
-                <a class="" href="#clients">Customers</a>
-                <ul class="space-y-2 mt-3 font-light text-sm lg:hidden">
+              <li class="text-center group relative">
+                <a class="active-link px-3" href="#clients">Customers</a>
+                <ul
+                  class="space-y-2 mt-3 font-light text-sm lg:hidden lg:group-hover:absolute lg:top-8 lg:left-0 lg:text-left lg:bg-black"
+                >
                   <li
                     class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
                   >
@@ -132,15 +135,15 @@
                 </ul>
               </li>
 
-              <li class="">
-                <a class="" href="./shop.html">Shop</a>
+              <li class="active-link px-3">
+                <a class="" href="#shop">Shop</a>
               </li>
 
-              <li class="">
-                <a class="" href="./news.html">news</a>
+              <li class="active-link px-3">
+                <a class="" href="#news">news</a>
               </li>
 
-              <li class="">
+              <li class="active-link px-3">
                 <a class="" href="./contact.html">contact</a>
               </li>
             </ul>
@@ -177,80 +180,73 @@
 
     <main>
       <section class="h-full w-full">
-        <div class="py-48">
-          <div class="bg-black w-full">
-            <div class="flex h-full w-full justify-center p-6">
-              <div>
-                <h2 class="text-3xl font-bold mb-3">
-                  Let’s get some detail on your retail...
-                </h2>
-                <p class="font-light">
-                  I’d be delighted to have a chat with you to see if I can help
-                </p>
-
-                <form class="mt-8 space-y-6">
-                  <div class="flex flex-col gap-3">
-                    <label class="font-bold" for="name">Name</label>
-                    <input
-                      class="py-3 rounded-full outline-none px-4 bg-[#333] placeholder:text-[#838383] focus:border focus:border-main"
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Patrick Murphy"
+        <div class="py-36">
+          <div class="max-w-4xl mx-auto grid place-items-center">
+            <div class="grid gap-12 sm:grid-cols-2 sm:gap-0">
+              <div class="grid gap-4">
+                <div>
+                  <a class="cursor-pointer grid place-items-center">
+                    <img
+                      class="w-[60%] hover:scale-110 duration-300"
+                      src="./assets/images/ebook.png"
+                      alt=""
                     />
-                  </div>
+                  </a>
+                </div>
 
-                  <div class="flex flex-col gap-3">
-                    <label class="font-bold" for="email">Email *</label>
-                    <input
-                      class="py-3 rounded-full outline-none px-4 bg-[#333] placeholder:text-[#838383] focus:border focus:border-main"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="example@domain.com"
-                    />
-                  </div>
+                <div class="text-center">
+                  <h3 class="">
+                    <a href="#">Retailing through Uncertainty</a>
+                  </h3>
 
-                  <div class="flex flex-col gap-3">
-                    <label class="font-bold" for="telephone"
-                      >Phone number</label
-                    >
-                    <input
-                      class="py-3 rounded-full outline-none px-4 bg-[#333] placeholder:text-[#838383] focus:border focus:border-main"
-                      type="tel"
-                      name="telephone"
-                      id="telephone"
-                      placeholder="086 123 4567"
-                    />
-                  </div>
+                  <span class="text-sm">eBook</span>
 
-                  <div class="flex flex-col gap-3">
-                    <label class="font-bold" for="subject">Subject</label>
-                    <input
-                      class="py-3 rounded-full outline-none px-4 bg-[#333] focus:border focus:border-main"
-                      type="tel"
-                      name="subject"
-                      id="subject"
-                    />
-                  </div>
-
-                  <div class="flex flex-col gap-3">
-                    <label class="font-bold" for="message">Message *</label>
-                    <textarea
-                      class="rounded-lg outline-none p-3 bg-[#333] focus:border focus:border-main"
-                      name="message"
-                      id="message"
-                      rows="7"
-                    />
-                  </div>
-
-                  <div class="text-center">
-                    <button class="py-3 px-4 bg-main" type="submit">
-                      Send
-                    </button>
-                  </div>
-                </form>
+                  <h4 class="font-semibold text-[22px]">€20.00</h4>
+                </div>
               </div>
+
+              <div class="grid gap-4">
+                <div>
+                  <a class="cursor-pointer grid place-items-center">
+                    <img
+                      class="w-[60%] hover:scale-110 duration-300"
+                      src="./assets/images/RPH.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+
+                <div class="text-center">
+                  <h3 class="">
+                    <a href="#">The Retail PowerHouse</a>
+                  </h3>
+
+                  <span class="text-sm">Membership Forum</span>
+
+                  <h4 class="font-semibold text-[22px]">47.00 per month</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-16 mt-20">
+              <a
+                class="inline-flex items-center flex-col text-sm gap-1"
+                href="#"
+                ><i class="ri-account-circle-line text-[1.5rem] font-light"></i>
+                My account</a
+              >
+              <a
+                class="inline-flex items-center flex-col text-sm gap-1"
+                href="#"
+                ><i class="ri-file-2-line text-[1.5rem] font-light"></i> Track
+                Orders</a
+              >
+              <a
+                class="inline-flex items-center flex-col text-sm gap-1"
+                href="#"
+                ><i class="ri-shopping-bag-line text-[1.5rem] font-light"></i>
+                Shopping Bag</a
+              >
             </div>
           </div>
         </div>
@@ -355,7 +351,7 @@
               <li>
                 <a
                   class="cursor-pointer hover:underline duration-300"
-                  href="#contact"
+                  href="./contact.html"
                   >Contact</a
                 >
               </li>
