@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------ FAVICON ------ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+
+    <!-- ------ CSS FILE ------ -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- ------ INTER & RALEWAY ------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------ TailwindCSS CDN ------ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ------ Tailwind Configuration ------ -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#e8546d",
+              textColor: "#ebeaea",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              second: ["Raleway", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Contact Miriam Simon - Miriam Simon</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 z-50 shadow-md w-full bg-[#0F0E0E]">
+      <nav
+        class="max-w-5xl mx-auto flex items-center justify-between px-3 h-20 lg:px-0"
+      >
+        <a href="#">
+          <img
+            src="https://cdn1.site-media.eu/images/0/5839864/MiriamSimon_BlackBG.svg"
+            alt="Miriam Simon header logo"
+            class="w-60"
+          />
+        </a>
+
+        <div class="nav__menu sm:w-[50%]" id="nav-menu">
+          <div class="py-16 h-full flex items-center justify-center">
+            <ul
+              class="uppercase flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-10 lg:pr-8"
+            >
+              <li class="">
+                <a class="" href="#">Home</a>
+              </li>
+
+              <li class="">
+                <a class="" href="./about.html">About</a>
+              </li>
+
+              <li class="text-center">
+                <a class="" href="#services">Services</a>
+                <ul
+                  class="text-center space-y-3 mt-3 font-light text-sm lg:hidden"
+                >
+                  <li
+                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                  >
+                    <a href="#BusinessAdvisoryService"
+                      >Business Advisory Service</a
+                    >
+                  </li>
+
+                  <li
+                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                  >
+                    <a href="#TheRetailPowerhouse">The Retail Powerhouse</a>
+                  </li>
+
+                  <li
+                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                  >
+                    <a href="#WorkshopsWebinarsSpeaking"
+                      >Workshops, Webinars, Speaking</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="text-center">
+                <a class="" href="#clients">Customers</a>
+                <ul class="space-y-2 mt-3 font-light text-sm lg:hidden">
+                  <li
+                    class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
+                  >
+                    <a href="#clients">clients</a>
+                  </li>
+
+                  <li
+                    class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
+                  >
+                    <a href="#testimonials">testimonials</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="">
+                <a class="" href="#shop">Shop</a>
+              </li>
+
+              <li class="">
+                <a class="" href="#news">news</a>
+              </li>
+
+              <li class="">
+                <a class="" href="#contact">contact</a>
+              </li>
+            </ul>
+
+            <div class="absolute top-4 right-4 lg:hidden" id="nav-close">
+              <i
+                class="ri-close-line text-[2.4rem] text-white cursor-pointer hover:text-main duration-300"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 lg:hidden">
+          <a href="tel:+353 86 856 9485">
+            <svg
+              class="fill-white h-7 cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="170 -787 659 875"
+              data-icon="ico-phone"
+              preserveAspectRatio="xMidYMid"
+            >
+              <path
+                d="M390.7 -496.7C270.4 -427.2 453.9 -83.1 585.6 -159.1L707.7 52.3C652.1 84.4 605.2 104.6 540.8 67.8 362 -34.4 165.2 -375.1 170.8 -578.3c1.9 -70.6 43.6 -98.3 97.9 -129.7 23.3 40.4 98.6 170.8 122 211.3zm50.4 -5.7c-13 7.5 -29.7 3.1 -37.3 -10l-115 -199.3c-7.5 -13 -3.1 -29.7 10 -37.3l60.5 -34.9c13 -7.5 29.7 -3.1 37.3 10L511.7 -574.6c7.5 13 3.1 29.7 -10 37.2l-60.6 35zM755.5 42.1c-13 7.5 -29.7 3.1 -37.3 -10l-115 -199.3c-7.5 -13 -3.1 -29.7 10 -37.3l60.5 -34.9c13 -7.5 29.7 -3.1 37.3 10L826.1 -30.1c7.5 13 3.1 29.7 -10 37.3l-60.6 34.9z"
+              ></path>
+            </svg>
+          </a>
+
+          <div class="inline" id="nav-toggle">
+            <i class="ri-menu-line text-[2.3rem] cursor-pointer"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="h-full w-full">
+        <div class="py-48">
+          <div class="bg-black w-full">
+            <div class="flex h-full w-full justify-center p-6">
+              <div>
+                <h2 class="text-3xl font-semibold mb-3">
+                  Let’s get some detail on your retail...
+                </h2>
+                <p class="font-light">
+                  I’d be delighted to have a chat with you to see if I can help
+                </p>
+
+                <form class="mt-8 space-y-6">
+                  <div class="flex flex-col gap-3">
+                    <label class="font-semibold" for="name">Name</label>
+                    <input
+                      class="py-3 rounded-full outline-none px-4 bg-[#333] placeholder:text-[#838383] focus:border focus:border-main"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Patrick Murphy"
+                    />
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <label class="font-semibold" for="email">Email *</label>
+                    <input
+                      class="py-3 rounded-full outline-none px-4 bg-[#333] placeholder:text-[#838383] focus:border focus:border-main"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="example@domain.com"
+                    />
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <label class="font-semibold" for="telephone"
+                      >Phone number</label
+                    >
+                    <input
+                      class="py-3 rounded-full outline-none px-4 bg-[#333] placeholder:text-[#838383] focus:border focus:border-main"
+                      type="tel"
+                      name="telephone"
+                      id="telephone"
+                      placeholder="086 123 4567"
+                    />
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <label class="font-semibold" for="subject">Subject</label>
+                    <input
+                      class="py-3 rounded-full outline-none px-4 bg-[#333] focus:border focus:border-main"
+                      type="tel"
+                      name="subject"
+                      id="subject"
+                    />
+                  </div>
+
+                  <div class="flex flex-col gap-3">
+                    <label class="font-semibold" for="message">Message *</label>
+                    <textarea
+                      class="rounded-lg outline-none p-3 bg-[#333] focus:border focus:border-main"
+                      name="message"
+                      id="message"
+                      rows="7"
+                    />
+                  </div>
+
+                  <div class="text-center">
+                    <button class="py-3 px-4 bg-main" type="submit">
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black">
+      <div class="h-full w-full py-16">
+        <div
+          class="px-3 space-y-12 max-w-5xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 sm:space-y-0 xl:px-0"
+        >
+          <div>
+            <img
+              src="https://cdn1.site-media.eu/images/0/5839864/MiriamSimon_BlackBG.svg"
+              alt="Miriam Simon footer logo"
+              class="w-56"
+            />
+
+            <div>
+              <p class="font-light text-lg">
+                A Successful Retail<br />
+                Strategist with One Foot in<br />
+                the Future.
+              </p>
+
+              <div class="flex mt-5 gap-4">
+                <a href="https://www.linkedin.com/in/miriamasimon">
+                  <i
+                    class="ri-linkedin-fill text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+
+                <a href="https://www.instagram.com/miriam_pto.ie/">
+                  <i
+                    class="ri-instagram-line text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+
+                <a href="https://www.facebook.com/PTO.ie/">
+                  <i
+                    class="ri-facebook-fill text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+
+                <a href="https://twitter.com/mirms09">
+                  <i
+                    class="ri-twitter-fill text-[1.25rem] text-main hover:text-white duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3 md:text-2xl lg:text-3xl">
+              Services
+            </h3>
+            <ul class="font-light space-y-1 text-lg">
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#aboutme"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#services"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#customers"
+                  >Customers</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#shop"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#news"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer hover:underline duration-300"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3 md:text-2xl lg:text-3xl">
+              Contact
+            </h3>
+            <p class="font-light text-lg">Miriam Simon</p>
+
+            <div class="flex flex-col">
+              <a
+                class="inline-flex items-center gap-2 cursor-pointer"
+                href="tel:+353 (0)86 856 9485"
+                ><i class="ri-phone-fill text-[1.25rem] text-main"></i> +353
+                (0)86 856 9485
+              </a>
+
+              <a
+                class="inline-flex items-center gap-2 cursor-pointer"
+                href="mailto:miriam@miriamsimon.ie"
+              >
+                <i class="ri-mail-fill text-[1.25rem] text-main"></i>
+                <span class="hover:underline">miriam@miriamsimon.ie</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------ Line & Copyright ------ -->
+        <div>
+          <div
+            class="w-full border-bottom my-2 bg-gray-600 h-px max-w-5xl mx-auto"
+          />
+
+          <p class="pt-4 text-center font-light text-xs">
+            Copyright © 2022 All Rights Reserved | miriamsimon.ie
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
