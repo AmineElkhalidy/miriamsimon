@@ -63,7 +63,7 @@
     <!-- HEADER -->
     <header class="fixed top-0 left-0 z-50 shadow-md w-full bg-[#0F0E0E]">
       <nav
-        class="max-w-5xl mx-auto flex items-center justify-between px-3 h-20 lg:px-0"
+        class="max-w-5xl mx-auto flex items-center gap-40 px-3 h-20 lg:px-0"
       >
         <a href="#">
           <img
@@ -73,74 +73,72 @@
           />
         </a>
 
-        <div class="nav__menu sm:w-[50%]" id="nav-menu">
+        <div class="nav__menu md:w-[50%]" id="nav-menu">
           <div class="py-16 h-full flex items-center justify-center">
             <ul
-              class="uppercase flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-10 lg:pr-8"
+              class="uppercase flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-3 lg:pr-8"
             >
-              <li class="">
-                <a class="" href="#">Home</a>
+              <li class="active-link px-3">
+                <a class="" href="./index.html">Home</a>
               </li>
 
-              <li class="">
-                <a class="" href="./about.html">About</a>
+              <li class="active-link ">
+                <a class="w-full" href="./about.html">About</a>
               </li>
 
-              <li class="text-center">
-                <a class="" href="#services">Services</a>
+              <li class="text-center group relative lg:h-20 lg:pt-7 duration-300">
+                <a class="active-link px-3" href="./index.html#services">Services</a>
                 <ul
-                  class="text-center space-y-3 mt-3 font-light text-sm lg:hidden"
+                  class="text-center lg:text-left lg:bg-black space-y-3 mt-3 font-light text-sm lg:w-[180px] lg:absolute lg:-top-96 lg:left-0 lg:group-hover:top-14"
                 >
                   <li
-                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                    class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#BusinessAdvisoryService"
-                      >Business Advisory Service</a
-                    >
+                    <a href="./index.html#BAS">Business Advisory Service</a>
                   </li>
 
                   <li
-                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                    class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#TheRetailPowerhouse">The Retail Powerhouse</a>
+                    <a href="./index.html#RPH">The Retail Powerhouse</a>
                   </li>
 
                   <li
-                    class="button w-[90%] duration-300 px-4 py-3 cursor-pointer"
+                    class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#WorkshopsWebinarsSpeaking"
-                      >Workshops, Webinars, Speaking</a
-                    >
+                    <a href="./index.html#WWS">Workshops, Webinars, Speaking</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="text-center">
-                <a class="" href="#clients">Customers</a>
-                <ul class="space-y-2 mt-3 font-light text-sm lg:hidden">
+              <li class="text-center group relative lg:h-20 lg:pt-7 duration-300">
+                <a class="active-link px-3" href="./index.html#clients">Customers</a>
+                <ul
+                  class="space-y-2 mt-3 font-light text-sm lg:absolute lg:-top-96 lg:left-0 lg:group-hover:top-14 lg:text-left lg:bg-black"
+                >
                   <li
                     class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
                   >
-                    <a href="#clients">clients</a>
+                    <a href="./index.html#clients">clients</a>
                   </li>
 
                   <li
                     class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
                   >
-                    <a href="#testimonials">testimonials</a>
+                    <a href="./index.html#testimonials">testimonials</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="">
+              <li class="active-link px-3">
                 <a class="" href="./shop.html">Shop</a>
               </li>
 
-              <li class="">
+              <li class="active-link px-3">
                 <a class="" href="./news.html">news</a>
               </li>
 
-              <li class="">
+              <li class="active-link px-3">
                 <a class="" href="./contact.html">contact</a>
               </li>
             </ul>
