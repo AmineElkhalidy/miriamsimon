@@ -69,7 +69,7 @@
     <!-- HEADER -->
     <header class="fixed top-0 left-0 z-50 shadow-md w-full bg-[#0F0E0E]">
       <nav
-        class="max-w-5xl mx-auto flex items-center justify-between px-3 h-20 lg:px-0"
+        class="max-w-5xl mx-auto flex items-center justify-between lg:justify-start lg:gap-60 px-3 h-20 lg:px-0"
       >
         <a href="#">
           <img
@@ -79,7 +79,7 @@
           />
         </a>
 
-        <div class="nav__menu sm:w-[50%]" id="nav-menu">
+        <div class="nav__menu md:w-[50%]" id="nav-menu">
           <div class="py-16 h-full flex items-center justify-center">
             <ul
               class="uppercase flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-3 lg:pr-8"
@@ -88,50 +88,58 @@
                 <a class="" href="./index.html">Home</a>
               </li>
 
-              <li class="active-link px-3">
-                <a class="" href="./about.html">About</a>
+              <li class="active-link">
+                <a class="w-full" href="./about.html">About</a>
               </li>
 
-              <li class="text-center group relative">
-                <a class="active-link px-3" href="#services">Services</a>
+              <li
+                class="text-center group relative lg:h-20 lg:pt-7 duration-300"
+              >
+                <a class="active-link px-3" href="./index.html#services"
+                  >Services</a
+                >
                 <ul
-                  class="text-center lg:text-left lg:w-[180px] lg:bg-black space-y-3 mt-3 font-light text-sm lg:hidden lg:hover:absolute lg:top-6 lg:left-0"
+                  class="text-center lg:text-left lg:bg-black space-y-3 mt-3 font-light text-sm lg:w-[180px] lg:absolute lg:-top-96 lg:left-0 lg:group-hover:top-14"
                 >
                   <li
                     class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#BAS">Business Advisory Service</a>
+                    <a href="./index.html#BAS">Business Advisory Service</a>
                   </li>
 
                   <li
                     class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#RPH">The Retail Powerhouse</a>
+                    <a href="./index.html#RPH">The Retail Powerhouse</a>
                   </li>
 
                   <li
                     class="button w-[90%] lg:w-full duration-300 px-4 py-3 cursor-pointer"
                   >
-                    <a href="#WWS">Workshops, Webinars, Speaking</a>
+                    <a href="./index.html#WWS">Workshops, Webinars, Speaking</a>
                   </li>
                 </ul>
               </li>
 
-              <li class="text-center group relative">
-                <a class="active-link px-3" href="#clients">Customers</a>
+              <li
+                class="text-center group relative lg:h-20 lg:pt-7 duration-300"
+              >
+                <a class="active-link px-3" href="./index.html#clients"
+                  >Customers</a
+                >
                 <ul
-                  class="space-y-2 mt-3 font-light text-sm lg:hidden lg:group-hover:absolute lg:top-8 lg:left-0 lg:text-left lg:bg-black"
+                  class="space-y-2 mt-3 font-light text-sm lg:absolute lg:-top-96 lg:left-0 lg:group-hover:top-14 lg:text-left lg:bg-black"
                 >
                   <li
                     class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
                   >
-                    <a href="#clients">clients</a>
+                    <a href="./index.html#clients">clients</a>
                   </li>
 
                   <li
                     class="button w-full duration-300 cursor-pointer py-3 px-[2.2rem]"
                   >
-                    <a href="#testimonials">testimonials</a>
+                    <a href="./index.html#testimonials">testimonials</a>
                   </li>
                 </ul>
               </li>
@@ -267,15 +275,24 @@
 
           <!-- Options -->
           <div class="flex gap-16 mt-28 flex-wrap px-4 sm:px-0">
-            <a class="inline-flex items-center flex-col text-sm gap-1" href="#"
+            <a
+              href="./account.html"
+              class="inline-flex items-center flex-col text-sm gap-1"
+              href="#"
               ><i class="ri-account-circle-line text-[1.5rem] font-light"></i>
               My account</a
             >
-            <a class="inline-flex items-center flex-col text-sm gap-1" href="#"
+            <a
+              href="./account.html"
+              class="inline-flex items-center flex-col text-sm gap-1"
+              href="#"
               ><i class="ri-file-2-line text-[1.5rem] font-light"></i> Track
               Orders</a
             >
-            <a class="inline-flex items-center flex-col text-sm gap-1" href="#"
+            <a
+              href="./shopping-cart.html"
+              class="inline-flex items-center flex-col text-sm gap-1"
+              href="#"
               ><i class="ri-shopping-bag-line text-[1.5rem] font-light"></i>
               Shopping Bag</a
             >
